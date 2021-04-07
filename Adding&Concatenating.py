@@ -1,6 +1,6 @@
+#adding
 def Add(x,y):
 	z=y+x
-	return(y)
 	print(z)
 Add(1,2)
 
