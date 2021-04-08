@@ -21,6 +21,6 @@ for i in range(0,6):
 	i=i+1
 
 #how do I make it so that the sequencewords and actions do not repeat?
-#A: use choice instead of random.choice instead of random.choice
+#A: use random.shuffle instead of random.choice
 #add conclusion sentence
 print(random.choice(conclusions) + ', ' + random.choice(who) + ' went to ' + random.choice(where) + ' ' + random.choice(what) + '.')
