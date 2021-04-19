@@ -66,5 +66,14 @@ for link in soup.find_all('a'):
 
 #
 #things I want to improve on:
-#1) Edit this broken link checker so that it reads links from a file
-#2) 
+
+#1) Edit this broken link checker so that it reads links from a file, 
+#rather than what it currently does, finding and checking all the elements on a single web page URL
+# by using the method find_all with the argument 'a'. 
+
+#2) So it seems like the broken link checker says status is 200 when a page is working
+#but I also want to know when the next page says "page not found" 
+#i.e. starting on the page https://ischoolapps.sjsu.edu/checklists/2020/fall-informatics.php
+# the next page is https://ischoolapps.sjsu.edu/checklists/2020/fall-informatics.php
+# says "Page not found". However, the broken link checker recognizes
+# it as a working page and prints the Status Code: 200
